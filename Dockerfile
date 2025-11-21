@@ -12,7 +12,7 @@ RUN dotnet restore hello-world-api/hello-world-api.csproj
 RUN dotnet publish hello-world-api/hello-world-api.csproj -c Release -o /out
 
 # =======================
-# STAGE 2 — Runtime (.NET Core 2.1 Runtime)
+# STAGE 2 — Runtime (.NET Core 2.1)
 # =======================
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1 AS runtime
 WORKDIR /app
